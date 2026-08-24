@@ -83,9 +83,9 @@ This is a horizontal plot, scroll right to check it.
 <br>
 
 
-## Attempts
+## Research and Development
 
-I was trained first as an experimentalist and later moved toward theoretical work. Ideally, I hope to combine experiment and theory more closely in the near future. Here are a few things I have done, and a few I am still doing.
+My work connects experimental biology with quantitative modelling. These projects span Bayesian inference, research software, imaging analysis, simulation, and biomaterials development.
 
 <br>
 
@@ -93,19 +93,25 @@ I was trained first as an experimentalist and later moved toward theoretical wor
 
 <div class="project-stack">
 <div class="project-panel">
-<p class="project-kicker">Unpublished preliminary work</p>
+<p class="project-kicker">Research framework and open-source software</p>
 
-<figure class="project-figure project-figure-wide bw-photo">
-<img class="project-asset" src="demo/Bayes/fig1_a_bw.png" alt="Cropped preliminary figure showing panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics." />
-<figcaption>Cropped panel a from an unpublished Bayesian framework for cytotoxic lymphocyte-target cell interaction dynamics. <a href="demo/Bayes/fig1_a_bw.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></figcaption>
+<figure class="project-figure project-figure-wide">
+<img class="project-asset" src="demo/Bayes/figure_abstract.png" alt="Graphic abstract showing how BARRACUDA converts time-lapse imaging into single-cell kill-contact histories and tests population heterogeneity and longitudinal variation." />
+<figcaption>BARRACUDA uses single-cell kill-contact histories to identify the mechanisms underlying variation in NK-cell cytotoxicity.</figcaption>
 </figure>
 
-<details>
-<summary>brief introduction (unpublished and confidential)</summary>
-<p>This is an unpublished and still-confidential project on Bayesian inference for time-lapse imaging data in immunology, focused on cytotoxic lymphocyte-target cell interactions at the single-cell level.</p>
+<div class="project-copy">
+<h4>BARRACUDA</h4>
+<p><strong>Bayesian Analysis Resolving Randomness and Alternative Causes Underlying Differential Activity</strong> is a quantitative framework for identifying why natural killer (NK) cell cytotoxic behaviour varies between individual cells. It combines event-count models with ordered contact-kill histories to distinguish stochastic encounters and killing decisions from stable cell-to-cell differences, donor effects, and changes induced by previous interactions.</p>
 
-<p>The central aim is to build a mechanistic framework that separates migration, encounter and contact formation, and post-contact killing decisions, so that heterogeneous behaviour can be interpreted in biologically meaningful terms rather than only through endpoint summaries.</p>
-</details>
+<p>Applied to time-lapse imaging of untreated, rituximab-treated, and CC-96673-treated NK cells, the framework found continuous heterogeneity across conditions while revealing distinct treatment mechanisms: rituximab primarily increased killing efficiency, whereas CC-96673 reduced cell-to-cell variability and produced a more homogeneous cytotoxic response.</p>
+
+<div class="project-actions">
+<a class="icon-button" href="https://github.com/sthsci/Barracuda" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="icon-button" href="https://barracuda.clingenland.science/" target="_blank" rel="noopener noreferrer">Web app</a>
+<a class="icon-button" href="https://sthsci.github.io/Barracuda/" target="_blank" rel="noopener noreferrer">Python API</a>
+</div>
+</div>
 </div>
 
 <article class="project-panel project-panel-split">
@@ -152,24 +158,12 @@ I was trained first as an experimentalist and later moved toward theoretical wor
 </figure>
 <div class="project-copy">
 <h4>MantiShrimp</h4>
-<p>A lightweight agent-based simulator for killer-target immune-cell interactions, built to study migration, contact formation, probabilistic killing, and target death dynamics in 2D.</p>
-<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/MantiShrimp" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/MantiShrimp</a></p>
+<p>A Python package for off-lattice, two-dimensional agent-based modelling of killer immune cell-target cell interactions. It combines cell migration and Hookean mechanics with contact formation, probabilistic killing, target death, and cell-state dynamics, and includes Bayesian event-count models for inference from per-cell contacts or kills.</p>
+<div class="project-actions">
+<a class="icon-button" href="https://github.com/sthsci/MantiShrimp" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="icon-button" href="https://pypi.org/project/mantishrimp/" target="_blank" rel="noopener noreferrer">PyPI</a>
+<a class="icon-button" href="https://doi.org/10.5281/zenodo.21908641" target="_blank" rel="noopener noreferrer">Zenodo DOI</a>
 </div>
-</article>
-
-<article class="project-panel project-panel-split">
-<figure class="project-figure bw-photo">
-<video class="project-asset" autoplay muted loop playsinline preload="metadata">
-<source src="demo/software/lineage_1_raw_only.mp4" type="video/mp4" />
-<img src="demo/software/lineage_1_raw_only.gif" alt="Animated zebrafish lineage view showing 3D microscopy data and tracked lineage-level structure over time." />
-</video>
-<figcaption>Lineage-level visualisation from the zebrafish analysis pipeline.</figcaption>
-</figure>
-<div class="project-copy">
-<p class="project-kicker">Confidential software under development</p>
-<h4>zebrafish</h4>
-<p>An internal zebrafish time-lapse imaging analysis pipeline for preprocessing 4D microscopy data, generating nuclei masks, tracking cells across time, and performing lineage-level heterochromatin dot detection. Data from May Liu at PDN Cambridge.</p>
-<p><strong>Status:</strong> private repository, active development.</p>
 </div>
 </article>
 </div>

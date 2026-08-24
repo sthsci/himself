@@ -736,6 +736,16 @@ label input {
   background: var(--background-color-alt);
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--line-height) / 2) 1ch;
+}
+
+.project-actions > * {
+  margin-top: 0;
+}
+
 .icon-button-mark {
   display: inline-flex;
   width: 4ch;
