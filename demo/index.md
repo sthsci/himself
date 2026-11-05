@@ -201,7 +201,6 @@ Time-lapse microscopy lets me follow an immune cell from one target to the next.
 ## Publications
 
 <p>
-  You’ll find the biophysics preprint under Elephes Sung and my nanomaterials papers under Fan-Xin Song.
   <a class="icon-button scholar-button" href="https://scholar.google.com/citations?user=HcFouHYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
     <span>My Google Scholar profile</span>
   </a>
