@@ -1,6 +1,6 @@
 ---
 title: "Elephes Sung"
-subtitle: "Something of a scientist"
+subtitle: "Natural killer cells and their targets"
 author: "King of the Clingenland"
 author-url: "https://github.com/ElephesSung"
 lang: en
@@ -13,25 +13,25 @@ lang: en
 ---
 
 
-## About
+## About me {#about}
 
 <table class="about-card">
   <tr>
     <td class="width-min about-photo-cell">
       <figure class="bw-photo about-photo">
-        <img src="demo/profile_2.JPG" alt="Elephes Sung" />
-        <figcaption>print("hello")</figcaption>
+        <img src="demo/profile_2.JPG" alt="Portrait of Elephes Sung" />
+        <figcaption>Hello, I’m Elephes.</figcaption>
       </figure>
     </td>
 
     <td class="width-auto about-copy">
-      <p>I am currently a PhD student in Life Sciences at Imperial College, with a research interest in <strong>mathematical biophysics and immunology</strong>.</p>
+      <p>I’m a PhD student in Life Sciences at Imperial College London. I work in <strong>mathematical biophysics and immunology</strong>, studying why some targets survive an encounter with a natural killer (NK) cell and others do not.</p>
 
-      <p>Previously, I completed an MRes in Systems and Synthetic Biology, also at Imperial College. Even prior to that, I got my bachelor’s degree in Nanomaterials and Nanotechnology.</p>
+      <p>I studied Nanomaterials and Nanotechnology as an undergraduate, then completed an MRes in Systems and Synthetic Biology at Imperial.</p>
 
-      <p>Approximately 84% of people mispronounce my name on first reading, while 52.1% confidently assume it is Greek. Neither observation is especially concerning: you are entirely welcome to pronounce it however you wish.</p>
+      <p>I joke that about 84% of people mispronounce my name the first time they read it, and 52.1% are sure it’s Greek. You’re welcome to say it however you like.</p>
 
-      <p>You can email me at <a href="mailto:eu23@ic.ac.uk?subject=Hello_from_webpage">eu23@ic.ac.uk</a></p>
+      <p>Email me at <a href="mailto:eu23@ic.ac.uk?subject=Hello_from_webpage">eu23@ic.ac.uk</a>.</p>
     </td>
   </tr>
 </table>
@@ -42,37 +42,25 @@ lang: en
 
 <br>
 
-## Trajectory
+## Education and research timeline {#trajectory}
 
-This is a horizontal plot, scroll right to check it.
+I turned from materials engineering to mathematical modelling because I wanted to understand how immune cells work. Scroll right to follow the timeline.
 
 <figure class="trajectory">
 <pre>
-/*
-            I need more quantitative                                                                                  
-            & systematic methods to                                                                                   
-            immunological mechanisms                                                                                  
-                     │                                                                                                
-  2019-2023          │       2023-2024                               2024-2028                                        
- ┌───────────────┐   │      ┌────────────────────┐                  ┌─────────────────────────────────────────┐       
- │ B.Eng.        ┼───┴─────►│ M.Res. Systems     ┼──────┬──────────►│ PhD in Life Sciences Research           │       
- │ Nanomaterials │          │ & Synthetic Biology│      │           │ President's Scholarship                 │       
- └┬──┬──────────┬┘          └─────────┬──────────┘      │           └──────┬──────────────────────────────────┘       
-  │  └─────┬────┘                     │             in between:            │   Project 1. dynamics of interactions    
-  │        │~3yrs                     │             ESA Hackthon           │          between killer immune cell      
-  │        ▼                          ▼             Bayesian inference     │                     & target cells       
-  │   UG project               Master's project       for astronauts'      │                                          
-  │   Injectable Hydrogel      Agent-based modelling    health prediction  │   Project 2. dynamics of immune receptors
-  │   NK cell delivery         NK cell-tumour                              │          & cell decision-making          
-  │         cancer therapy             interactions                        │                                          
-  ▼ ~1yr                                                                   │                                          
-  lab intern                                                               small confidential project:                
-  solar chemical                                                           Google Deepmind & Imperial College         
-  battery                                                                                                             
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐      
-│  TIMELINE                           TIMELINE                        TIMELINE                     TIMELINE    │      
-└──────────────────────────────────────────────────────────────────────────────────────────────────────────────┘      
- */
+ 2019–2023                         2023–2024                           2024–2028
+┌─────────────────────────────┐   ┌───────────────────────────────┐   ┌──────────────────────────────────────────┐
+│ B.Eng. in Nanomaterials     │──►│ MRes in Systems               │──►│ PhD in Life Sciences Research            │
+│ and Nanotechnology          │   │ and Synthetic Biology         │   │ President’s Scholarship                  │
+└─┬───────────────────────────┘   └─┬─────────────────────────────┘   └─┬────────────────────────────────────────┘
+  ├─ Lab internship (~1 year)       ├─ Master’s project                 ├─ Project 1: How killer immune cells
+  │  Solar chemical battery         │  Agent-based modelling of         │  interact with target cells
+  │                                 │  NK cell–tumour interactions      │
+  └─ Undergraduate project          │                                   ├─ Project 2: Immune receptor dynamics
+     (~3 years)                     └─ Before my PhD: ESA hackathon     │  and how cells make decisions
+     Injectable hydrogel for           Bayesian inference for           │
+     NK cell delivery in               astronaut health prediction      └─ Small confidential project with
+     cancer therapy                                                        Google DeepMind and Imperial College
 </pre>
 </figure>
 
@@ -83,69 +71,69 @@ This is a horizontal plot, scroll right to check it.
 <br>
 
 
-## Research and Development
+## Research projects {#research-and-development}
 
-My work connects experimental biology with quantitative modelling. These projects span Bayesian inference, research software, imaging analysis, simulation, and biomaterials development.
+Time-lapse microscopy lets me follow an immune cell from one target to the next. I write software to analyse those encounters and use Bayesian models and simulations to interpret them. My earlier work in biomaterials asked how an injectable gel might carry immune cells into a solid tumour.
 
 <br>
 
-### Bayesian inference for immunology
+### Bayesian models of immune function {#bayesian-inference-for-immunology}
 
 <div class="project-stack">
 <div class="project-panel">
-<p class="project-kicker">Research framework and open-source software</p>
+<p class="project-kicker">Open-source software for single-cell analysis</p>
 
 <figure class="project-figure project-figure-wide">
-<img class="project-asset" src="demo/Bayes/figure_abstract.png" alt="Graphic abstract showing how BARRACUDA converts time-lapse imaging into single-cell kill-contact histories and tests population heterogeneity and longitudinal variation." />
-<figcaption>BARRACUDA uses single-cell kill-contact histories to identify the mechanisms underlying variation in NK-cell cytotoxicity.</figcaption>
+<img class="project-asset" src="demo/Bayes/figure_abstract.png" alt="A microscopy image leads to a sequence of lethal and non-lethal contacts for one NK cell. The lower panels compare variation between cells with changes in one cell over successive contacts." />
+<figcaption>Each NK cell has a history: which targets it touched, in what order, and which of those targets died.</figcaption>
 </figure>
 
 <div class="project-copy">
 <h4>BARRACUDA</h4>
-<p><strong>Bayesian Analysis Resolving Randomness and Alternative Causes Underlying Differential Activity</strong> is a quantitative framework for identifying why natural killer (NK) cell cytotoxic behaviour varies between individual cells. It combines event-count models with ordered contact-kill histories to distinguish stochastic encounters and killing decisions from stable cell-to-cell differences, donor effects, and changes induced by previous interactions.</p>
+<p>A high kill count alone cannot tell us whether an NK cell met more targets or was more likely to kill the ones it met. We developed BARRACUDA (<strong>Bayesian Analysis Resolving Randomness and Alternative Causes Underlying Differential Activity</strong>) to study that distinction. We use event-count models alongside each cell’s sequence of contacts and kills to test how much variation chance can explain. We also test for persistent differences between cells, differences between donors and changes within a cell after earlier encounters.</p>
 
-<p>Applied to time-lapse imaging of untreated, rituximab-treated, and CC-96673-treated NK cells, the framework found continuous heterogeneity across conditions while revealing distinct treatment mechanisms: rituximab primarily increased killing efficiency, whereas CC-96673 reduced cell-to-cell variability and produced a more homogeneous cytotoxic response.</p>
+<p>Our analysis of time-lapse recordings suggested a continuum of NK-cell killing activity in untreated samples and in both treatment conditions. Rituximab was associated mainly with higher killing efficiency. With CC-96673, killing activity varied less from cell to cell.</p>
 
 <div class="project-actions">
-<a class="icon-button" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752048v1.abstract" target="_blank" rel="noopener noreferrer">bioRxiv preprint</a>
-<a class="icon-button" href="https://github.com/sthsci/Barracuda" target="_blank" rel="noopener noreferrer">GitHub</a>
-<a class="icon-button" href="https://barracuda.clingenland.science/" target="_blank" rel="noopener noreferrer">Web app</a>
-<a class="icon-button" href="https://sthsci.github.io/Barracuda/" target="_blank" rel="noopener noreferrer">Python API</a>
+<a class="icon-button" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752048v1.abstract" target="_blank" rel="noopener noreferrer">Read the preprint</a>
+<a class="icon-button" href="https://github.com/sthsci/Barracuda" target="_blank" rel="noopener noreferrer">BARRACUDA on GitHub</a>
+<a class="icon-button" href="https://barracuda.clingenland.science/" target="_blank" rel="noopener noreferrer">Open the web app</a>
+<a class="icon-button" href="https://sthsci.github.io/Barracuda/" target="_blank" rel="noopener noreferrer">Python API reference</a>
 </div>
 </div>
 </div>
 
 <article class="project-panel project-panel-split">
 <figure class="project-figure bw-photo">
-<img class="project-asset" src="demo/Bayes/redshift.png" alt="Summary slide from Redshift, a hackathon project modelling astronaut immune health with cytokine dynamics and a normalized resilience factor." />
-<figcaption>Redshift: a compact cytokine-based immune-risk model for spaceflight.</figcaption>
+<img class="project-asset" src="demo/Bayes/redshift.png" alt="Curves show how activating and inhibitory cytokine concentrations change in the model. A second plot illustrates the resulting resilience factor before, during and after spaceflight." />
+<figcaption>Redshift summarises the balance between activating and inhibitory cytokines as a normalised resilience factor.</figcaption>
 </figure>
 <div class="project-copy">
 <h4>Redshift</h4>
-<p>A brief Bayesian/ABC modelling project from the first European Space Agency hackathon, building a compact cytokine-based resilience factor for astronaut immune health.</p>
-<p>Our team initially won, though the medal was later rescinded for administrative and political reasons.</p>
+<p>At the first European Space Agency hackathon, our team built Redshift to study how spaceflight might affect astronauts’ immune function. We used approximate Bayesian computation (ABC) to estimate how cytokine concentrations change over time.</p>
+<p>Our team won the hackathon, but the medal was later withdrawn. My understanding is that the reasons were administrative and political.</p>
 </div>
 </article>
 </div>
 
 <br>
 
-### Crappy softwares: imaging analysis and simulators
+### Software for cell imaging and simulation {#crappy-softwares-imaging-analysis-and-simulators}
 
 <div class="project-stack">
 <article class="project-panel">
 <figure class="project-figure bw-photo">
 <video class="project-asset" autoplay muted loop playsinline preload="metadata">
 <source src="demo/software/animation_Tu_12.mp4" type="video/mp4" />
-<img src="demo/software/animation_Tu_12.gif" alt="Animated CytotoxicVision output showing a target cell, nearby immune cells, and fluorescence traces over time." />
+<img src="demo/software/animation_Tu_12.gif" alt="Microscopy images follow a target cell and nearby immune cells. Beside them, a plot shows fluorescence intensity in the target over time." />
 </video>
-<figcaption>Single-cell dynamics from CytotoxicVision.</figcaption>
+<figcaption>In this target cell, the Calcein Green AM signal falls as the TO-PRO-3 signal rises.</figcaption>
 </figure>
 <div class="project-copy">
 <h4>CytotoxicVision</h4>
-<p>A small but useful imaging pipeline for analysing time-lapse fluorescence microscopy data of NK-cell interactions with 721.221 target cells. Demo data from Dr Cathal Hosty from the Dan Davis lab.</p>
-<p>The current version is still more of a demonstration framework than a polished package, but it already produces interpretable single-cell and population-level readouts.</p>
-<p><strong>Repository:</strong> <a href="https://github.com/ElephesSung/CytotoxicVision" target="_blank" rel="noopener noreferrer">github.com/ElephesSung/CytotoxicVision</a></p>
+<p>CytotoxicVision analyses time-lapse fluorescence microscopy of NK cells interacting with 721.221 target cells. Dr Cathal Hosty in the Dan Davis lab provided the example recordings.</p>
+<p>The software is a prototype. It pairs images of individual cells with their fluorescence traces and summarises measurements across the cell population.</p>
+<p><a href="https://github.com/ElephesSung/CytotoxicVision" target="_blank" rel="noopener noreferrer">CytotoxicVision source code on GitHub</a></p>
 </div>
 </article>
 
@@ -153,17 +141,17 @@ My work connects experimental biology with quantitative modelling. These project
 <figure class="project-figure bw-photo">
 <video class="project-asset" autoplay muted loop playsinline preload="metadata">
 <source src="demo/software/vis_test.mp4" type="video/mp4" />
-<img src="demo/software/vis_test.gif" alt="Animated MantiShrimp simulation showing killer and target cells moving within a bounded region over time." />
+<img src="demo/software/vis_test.gif" alt="Simulated killer cells move among a cluster of targets inside a square boundary. The legend distinguishes killer cells, live targets and dead targets." />
 </video>
-<figcaption>Agent-based killer-target simulation from MantiShrimp.</figcaption>
+<figcaption>Each marker is a cell. The simulation follows its movement and records when a target dies.</figcaption>
 </figure>
 <div class="project-copy">
 <h4>MantiShrimp</h4>
-<p>A Python package for off-lattice, two-dimensional agent-based modelling of killer immune cell-target cell interactions. It combines cell migration and Hookean mechanics with contact formation, probabilistic killing, target death, and cell-state dynamics, and includes Bayesian event-count models for inference from per-cell contacts or kills.</p>
+<p>MantiShrimp is a Python package for simulating encounters between killer immune cells and their targets. Each cell is an agent that moves in two dimensions without a fixed grid. This off-lattice model uses Hookean mechanics for cell interactions and allows cells to change state. Killing is probabilistic, so a target can survive contact. The package also fits Bayesian event-count models to the number of contacts or kills recorded for each cell.</p>
 <div class="project-actions">
-<a class="icon-button" href="https://github.com/sthsci/MantiShrimp" target="_blank" rel="noopener noreferrer">GitHub</a>
-<a class="icon-button" href="https://pypi.org/project/mantishrimp/" target="_blank" rel="noopener noreferrer">PyPI</a>
-<a class="icon-button" href="https://doi.org/10.5281/zenodo.21908641" target="_blank" rel="noopener noreferrer">Zenodo DOI</a>
+<a class="icon-button" href="https://github.com/sthsci/MantiShrimp" target="_blank" rel="noopener noreferrer">MantiShrimp on GitHub</a>
+<a class="icon-button" href="https://pypi.org/project/mantishrimp/" target="_blank" rel="noopener noreferrer">Package on PyPI</a>
+<a class="icon-button" href="https://doi.org/10.5281/zenodo.21908641" target="_blank" rel="noopener noreferrer">Zenodo record</a>
 </div>
 </div>
 </article>
@@ -171,36 +159,36 @@ My work connects experimental biology with quantitative modelling. These project
 
 <br>
 
-### Injectable Hydrogel
+### Injectable hydrogels {#injectable-hydrogel}
 
 <div class="project-panel">
 <div class="hydrogel-compare">
 <figure class="project-figure bw-photo">
 <video class="project-asset" autoplay muted loop playsinline preload="metadata">
 <source src="demo/hydrogel/IMG_2881_bw.mp4" type="video/mp4" />
-<img src="demo/hydrogel/IMG_2881_bw.gif" alt="Left: Demonstration of a shape-memory hydrogel scaffold being compressed for injection and recovering its shape afterward." />
+<img src="demo/hydrogel/IMG_2881_bw.gif" alt="A gelatin scaffold is compressed and expands back to its original shape when released." />
 </video>
 </figure>
 <div class="hydrogel-side">
 <figure class="project-figure bw-photo">
-<img class="project-asset" src="demo/hydrogel/IMG_3742.png" alt="Up: Scanning electron microscopy (SEM) image showing the interconnected porous microstructure of the hydrogel scaffold." />
+<img class="project-asset" src="demo/hydrogel/IMG_3742.png" alt="Scanning electron micrograph of the hydrogel scaffold showing how its pores connect." />
 </figure>
 <div class="hydrogel-caption-block">
-<p>← Injectable shape-memory hydrogel (gelatin) during compression and recovery.</p>
-<p>↑ SEM view of the porous scaffold architecture.</p>
+<p>In the animation, the gelatin hydrogel regains its shape after compression.</p>
+<p>Scanning electron microscopy (SEM) shows where neighbouring pores connect.</p>
 </div>
 </div>
 </div>
 
 <details>
-<summary>porous cryogel</summary>
-<p>This was a biomaterials project I reproduced during my undergraduate studies, based on the injectable shape-memory scaffold reported by Bencherif and colleagues. The concept was simple but elegant: to create a porous hydrogel that could be compressed, injected through a syringe, and then recover its original structure after injection.</p>
+<summary>How we made the porous cryogel</summary>
+<p>As an undergraduate, I reproduced the injectable shape-memory scaffold described by Bencherif and colleagues. Their porous hydrogel could be compressed to fit through a syringe and would regain its shape after injection.</p>
 
-<p>In their work, the porous architecture was generated through slow covalent crosslinking at low temperature. Ice crystals formed during the crosslinking process occupied space within the material and later served as pore templates.</p>
+<p>In their method, ice crystals form as the gel slowly crosslinks through covalent bonds at low temperature. When the ice melts, the spaces the crystals occupied become pores.</p>
 
-<p>Later, my colleagues and I developed a related approach for producing an ionically crosslinked porous alginate hydrogel. We first froze and lyophilised the alginate precursor, then immersed it in a calcium-ion solution to induce crosslinking. This produced a highly similar porous structure, while also preserving the material’s injectable behaviour.</p>
+<p>My colleagues and I later made a version from alginate. We froze and lyophilised the precursor, then immersed it in a solution of calcium ions to form ionic crosslinks. The gel had a similar pore structure and could still pass through a syringe.</p>
 
-<p>Our original aim was to load NK cells into the hydrogel and use it as a delivery platform for solid tumours. Because of COVID and a few other unavoidable disruptions, I never managed to complete the bioengineering part of the project. It was a slightly frustrating ending.</p>
+<p>We wanted to load the gel with NK cells and deliver them to solid tumours. COVID and other disruptions cut the project short. It was frustrating to leave the cell-delivery work unfinished.</p>
 
 <p><strong>Reference:</strong> Sidi A. Bencherif, R. Warren Sands, Deen Bhatta, et al. “Injectable preformed scaffolds with shape-memory properties.” <em>Proceedings of the National Academy of Sciences</em> 109(48): 19590-19595 (2012). <a href="https://doi.org/10.1073/pnas.1211516109" target="_blank" rel="noopener noreferrer">doi.org/10.1073/pnas.1211516109</a></p>
 </details>
@@ -215,15 +203,16 @@ My work connects experimental biology with quantitative modelling. These project
 ## Publications
 
 <p>
-  <a class="icon-button scholar-button" href="https://scholar.google.com/citations?user=HcFouHYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Open Google Scholar profile">
-    <span>Google Scholar</span>
+  You’ll find the biophysics preprint under Elephes Sung and my nanomaterials papers under Fan-Xin Song.
+  <a class="icon-button scholar-button" href="https://scholar.google.com/citations?user=HcFouHYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+    <span>My Google Scholar profile</span>
   </a>
 </p>
 
 
 
 <details>
-<summary> Mathematical Biophysics </summary>
+<summary>Mathematical biophysics</summary>
 <table class="pub-cards">
   <tr>
     <td class="width-auto">
@@ -231,7 +220,7 @@ My work connects experimental biology with quantitative modelling. These project
       <p>A Bayesian framework reveals heterogeneous and stochastic decision-making in NK cell cytotoxicity.</p>
       <p><strong>Elephes Sung</strong>, Cathal Hosty, Khodor S. Hazime, Leanne Peiser, Lara Stepan, Daniel M. Davis, Ruben Perez-Carrasco</p>
       <p><em>bioRxiv</em>, posted 22 September 2026</p>
-      <p><a href="https://www.biorxiv.org/content/10.64898/2026.09.16.752048v1.abstract">Read preprint</a> · DOI: <a href="https://doi.org/10.64898/2026.09.16.752048">10.64898/2026.09.16.752048</a></p>
+      <p><a href="https://www.biorxiv.org/content/10.64898/2026.09.16.752048v1.abstract">Read the NK-cell preprint</a> · DOI: <a href="https://doi.org/10.64898/2026.09.16.752048">10.64898/2026.09.16.752048</a></p>
     </td>
   </tr>
 </table>
@@ -244,7 +233,7 @@ My work connects experimental biology with quantitative modelling. These project
 
 <details>
 
-<summary>Nanomaterials & Drug Delivery</summary>
+<summary>Nanomaterials and drug delivery</summary>
 <p>
 <table class="pub-cards">
   <tr>
@@ -253,7 +242,7 @@ My work connects experimental biology with quantitative modelling. These project
       <p>Precision Medicine: The Road to In Vivo Synthetic Therapeutic Agent.</p>
       <p>Yang‐Bao Miao, Zhao Wang, <strong>Fan-Xin Song</strong>, Renchi Gao, Zheng Deng, Guohui Zhang</p>
       <p><em>Advanced Functional Materials</em>, Vol. 35, Issue 47, p. 2510183 (2025)</p>
-      <p><a href="https://doi.org/10.1002/adfm.202510183">Read more</a></p>
+      <p><a href="https://doi.org/10.1002/adfm.202510183">Read the review on in vivo synthesis</a></p>
     </td>
   </tr>
   <tr>
@@ -262,7 +251,7 @@ My work connects experimental biology with quantitative modelling. These project
       <p>Recent Progress in Nanomaterial-Based Biosensors and Theranostic Nanomedicine for Bladder Cancer.</p>
       <p><strong>Fan-Xin Song</strong>, Xiaojian Xu, Hengze Ding, Le Yu, Haochen Huang, Jinting Hao, Chenghao Wu, Rui Liang, Shaohua Zhang</p>
       <p><em>Biosensors</em>, Vol. 13, Issue 1, p. 106 (2023)</p>
-      <p><a href="https://doi.org/10.3390/bios13010106">Read more</a></p>
+      <p><a href="https://doi.org/10.3390/bios13010106">Read the bladder cancer review</a></p>
     </td>
   </tr>
   <tr>
@@ -271,7 +260,7 @@ My work connects experimental biology with quantitative modelling. These project
       <p>Achieving Precise Non-Invasive ROS Spatiotemporal Manipulation for Colon Cancer Immunotherapy.</p>
       <p>Yang-Bao Miao, Hong-Xia Ren, Guohui Zhang, <strong>Fan-Xin Song</strong>, Weixin Liu, Yi Shi</p>
       <p><em>Chemical Engineering Journal</em>, Vol. 481, p. 148520 (2024)</p>
-      <p><a href="https://doi.org/10.1016/j.cej.2024.148520">Read more</a></p>
+      <p><a href="https://doi.org/10.1016/j.cej.2024.148520">Read the colon cancer immunotherapy study</a></p>
     </td>
   </tr>
   <tr>
@@ -280,7 +269,7 @@ My work connects experimental biology with quantitative modelling. These project
       <p>Tailoring a Luminescent Metal–Organic Framework Precise Inclusion of Pt-Aptamer Nanoparticle for Noninvasive Monitoring Parkinson's Disease.</p>
       <p>Yang-Bao Miao, Hong-Xia Ren, Qilong Zhong, <strong>Fan-Xin Song</strong></p>
       <p><em>Chemical Engineering Journal</em>, Vol. 441, p. 136009 (2022)</p>
-      <p><a href="https://doi.org/10.1016/j.cej.2022.136009">Read more</a></p>
+      <p><a href="https://doi.org/10.1016/j.cej.2022.136009">Read the Parkinson’s disease monitoring study</a></p>
     </td>
   </tr>
   <tr>
@@ -289,7 +278,7 @@ My work connects experimental biology with quantitative modelling. These project
       <p>All-in-One, Solid-State, Solar-Powered Electrochemical Cell.</p>
       <p>Yu Zhao, Chenyang Li, <strong>Fan-Xin Song</strong>, Yi Li, Yan Liu, Yajie Zhao, Xiaohong Zhang, Yu Zhao, Zhenhui Kang</p>
       <p><em>ACS Applied Materials & Interfaces</em>, Vol. 12, Issue 51, pp. 57182–57189 (2020)</p>
-      <p><a href="https://doi.org/10.1021/acsami.0c19167">Read more</a></p>
+      <p><a href="https://doi.org/10.1021/acsami.0c19167">Read the solar-powered electrochemical cell study</a></p>
     </td>
   </tr>
 </table>
