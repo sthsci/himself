@@ -107,6 +107,7 @@ My work connects experimental biology with quantitative modelling. These project
 <p>Applied to time-lapse imaging of untreated, rituximab-treated, and CC-96673-treated NK cells, the framework found continuous heterogeneity across conditions while revealing distinct treatment mechanisms: rituximab primarily increased killing efficiency, whereas CC-96673 reduced cell-to-cell variability and produced a more homogeneous cytotoxic response.</p>
 
 <div class="project-actions">
+<a class="icon-button" href="https://www.biorxiv.org/content/10.64898/2026.09.16.752048v1.abstract" target="_blank" rel="noopener noreferrer">bioRxiv preprint</a>
 <a class="icon-button" href="https://github.com/sthsci/Barracuda" target="_blank" rel="noopener noreferrer">GitHub</a>
 <a class="icon-button" href="https://barracuda.clingenland.science/" target="_blank" rel="noopener noreferrer">Web app</a>
 <a class="icon-button" href="https://sthsci.github.io/Barracuda/" target="_blank" rel="noopener noreferrer">Python API</a>
@@ -223,7 +224,17 @@ My work connects experimental biology with quantitative modelling. These project
 
 <details>
 <summary> Mathematical Biophysics </summary>
-<p>coming soon...</p>
+<table class="pub-cards">
+  <tr>
+    <td class="width-auto">
+      <p><strong>Preprint</strong></p>
+      <p>A Bayesian framework reveals heterogeneous and stochastic decision-making in NK cell cytotoxicity.</p>
+      <p><strong>Elephes Sung</strong>, Cathal Hosty, Khodor S. Hazime, Leanne Peiser, Lara Stepan, Daniel M. Davis, Ruben Perez-Carrasco</p>
+      <p><em>bioRxiv</em>, posted 22 September 2026</p>
+      <p><a href="https://www.biorxiv.org/content/10.64898/2026.09.16.752048v1.abstract">Read preprint</a> · DOI: <a href="https://doi.org/10.64898/2026.09.16.752048">10.64898/2026.09.16.752048</a></p>
+    </td>
+  </tr>
+</table>
 </details>
 
 
