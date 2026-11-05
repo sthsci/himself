@@ -202,10 +202,12 @@ img, video {
   width: 100%;
   object-fit: contain;
   overflow: hidden;
+  filter: grayscale(100%);
 }
 img {
   font-style: italic;
   color: var(--text-color-alt);
+  -webkit-touch-callout: none;
 }
 
 details {

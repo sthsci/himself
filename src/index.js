@@ -77,6 +77,11 @@ function adjustMediaPadding() {
   }
 }
 
+for (const image of document.images) {
+  image.draggable = false;
+  image.addEventListener("contextmenu", event => event.preventDefault());
+}
+
 adjustMediaPadding();
 window.addEventListener("load", adjustMediaPadding);
 window.addEventListener("resize", adjustMediaPadding);
