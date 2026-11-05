@@ -616,6 +616,12 @@ label input {
   margin: 0;
 }
 
+.project-figure-inset {
+  float: right;
+  width: 40%;
+  margin: 0 0 calc(var(--line-height) / 2) 2ch;
+}
+
 .project-figure figcaption {
   margin-top: calc(var(--line-height) / 2);
   color: var(--text-color-alt);
@@ -790,6 +796,12 @@ label input {
 
   .project-panel-split {
     grid-template-columns: 1fr;
+  }
+
+  .project-figure-inset {
+    float: none;
+    width: min(85%, 30ch);
+    margin: 0 auto var(--line-height);
   }
 
   .project-gallery-compare .project-asset {

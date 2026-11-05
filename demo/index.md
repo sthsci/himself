@@ -81,13 +81,13 @@ Time-lapse microscopy lets me follow an immune cell from one target to the next.
 <div class="project-panel">
 <p class="project-kicker">Open-source software for single-cell analysis</p>
 
-<figure class="project-figure project-figure-wide">
+<div class="project-copy">
+<h4>BARRACUDA</h4>
+<figure class="project-figure project-figure-inset">
 <img class="project-asset" src="demo/Bayes/figure_abstract.png" alt="A microscopy image leads to a sequence of lethal and non-lethal contacts for one NK cell. The lower panels compare variation between cells with changes in one cell over successive contacts." />
 <figcaption>Each NK cell has a history: which targets it touched, in what order, and which of those targets died.</figcaption>
 </figure>
 
-<div class="project-copy">
-<h4>BARRACUDA</h4>
 <p>A high kill count alone cannot tell us whether an NK cell met more targets or was more likely to kill the ones it met. We developed BARRACUDA (<strong>Bayesian Analysis Resolving Randomness and Alternative Causes Underlying Differential Activity</strong>) to study that distinction. We use event-count models alongside each cell’s sequence of contacts and kills to test how much variation chance can explain. We also test for persistent differences between cells, differences between donors and changes within a cell after earlier encounters.</p>
 
 <p>Our analysis of time-lapse recordings suggested a continuum of NK-cell killing activity in untreated samples and in both treatment conditions. Rituximab was associated mainly with higher killing efficiency. With CC-96673, killing activity varied less from cell to cell.</p>
