@@ -612,6 +612,15 @@ label input {
   margin-top: 0;
 }
 
+.science-animations h3 {
+  margin-top: 0;
+}
+
+.science-animations video {
+  align-self: start;
+  border: 1px solid var(--text-color-alt);
+}
+
 .project-figure {
   margin: 0;
 }

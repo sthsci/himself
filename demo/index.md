@@ -13,6 +13,8 @@ lang: en
 ---
 
 
+[Watch my science animations](animations/index.html){.icon-button}
+
 ## About me {#about}
 
 <table class="about-card">
