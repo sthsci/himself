@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Short animations by Elephes Sung on electron microscopy and the Lotka–Volterra predator–prey model.">
+  <meta name="description" content="Elephes Sung explains mathematical models and experimental techniques in materials science and biology through predator–prey simulations and microscopy examples.">
   <title>Science animations · Elephes Sung</title>
   <link rel="stylesheet" href="../src/reset.css">
   <link rel="stylesheet" href="../src/index.css">
@@ -13,43 +13,49 @@
   <main class="science-animations">
     <header>
       <h1>Science animations</h1>
-      <p>I made these silent, 27-second films to show how electrons form a microscope image and why predator numbers peak after prey numbers do.</p>
+      <p>I make short animations about mathematical models and experimental techniques in materials science and biology. The three films here follow a predator–prey cycle and explain why gold nanoparticles look bright in one electron microscope and dark in another. Each film is silent and runs for 27 seconds.</p>
       <nav aria-label="Animation topics">
-        <a href="#microscopy">Electron microscopy</a> · <a href="#lotka-volterra">Predator–prey cycles</a>
+        <a href="#lotka-volterra">Mathematical models</a> · <a href="#microscopy">Materials science techniques</a> · <a href="#biological-techniques">Biological techniques</a>
       </nav>
     </header>
     <hr>
+    <section aria-labelledby="lotka-volterra">
+      <h2 id="lotka-volterra">Mathematical models</h2>
+      <div class="project-gallery">
+        <div>
+          <h3 id="populations">The Lotka–Volterra predator–prey model</h3>
+          <p id="populations-note">Each prey birth, successful hunt or predator death moves the point on the population plot. Its jagged path follows the simulated events. The smooth curve shows the prediction from the Lotka–Volterra equations. Predator numbers keep rising after prey numbers peak. As prey become scarce, predators decline and the prey population recovers.</p>
+        </div>
+        <video class="project-asset" src="lotka_volterra_zerokun.mp4" poster="lotka-volterra.webp" width="720" height="1280" controls playsinline preload="none" aria-labelledby="populations" aria-describedby="populations-note">
+          <a href="lotka_volterra_zerokun.mp4">Watch the Lotka–Volterra animation (MP4)</a>
+        </video>
+      </div>
+    </section>
+    <hr>
     <section aria-labelledby="microscopy">
-      <h2 id="microscopy">Gold under two microscopes</h2>
+      <h2 id="microscopy">Materials science techniques</h2>
       <div class="project-gallery">
         <article>
           <h3 id="sem">SEM: why gold looks bright</h3>
           <video class="project-asset" src="sem_nanoparticles_zerokun.mp4" poster="sem.webp" width="720" height="1280" controls playsinline preload="none" aria-labelledby="sem" aria-describedby="sem-note">
             <a href="sem_nanoparticles_zerokun.mp4">Watch the scanning electron microscopy animation (MP4)</a>
           </video>
-          <p id="sem-note">In scanning electron microscopy (SEM), a beam scans gold particles on carbon. More electrons bounce back from gold, so the detector records brighter pixels there.</p>
+          <p id="sem-note">A scanning electron microscope (SEM) sweeps its beam across gold nanoparticles on carbon. Here the detector counts electrons scattered back from the sample. More return from gold than from carbon, so the particles appear bright.</p>
         </article>
         <article>
           <h3 id="tem">TEM: why gold looks dark</h3>
           <video class="project-asset" src="tem_bright_field_zerokun_v4.mp4" poster="tem.webp" width="720" height="1280" controls playsinline preload="none" aria-labelledby="tem" aria-describedby="tem-note">
             <a href="tem_bright_field_zerokun_v4.mp4">Watch the bright-field transmission electron microscopy animation (MP4)</a>
           </video>
-          <p id="tem-note">In bright-field transmission electron microscopy (TEM), the beam passes through a thin film. Gold scatters electrons outside the aperture, so fewer reach the camera and the particles look dark.</p>
+          <p id="tem-note">In bright-field transmission electron microscopy (TEM), electrons pass through a thin carbon film dotted with gold particles. Gold scatters more electrons beyond the objective aperture than carbon does. Fewer reach the camera from those spots, so the particles appear dark.</p>
         </article>
       </div>
     </section>
     <hr>
-    <section aria-labelledby="lotka-volterra">
-      <h2 id="lotka-volterra">Predator–prey cycles</h2>
-      <div class="project-gallery">
-        <div>
-          <h3 id="populations">The Lotka–Volterra model</h3>
-          <p id="populations-note">Each birth, hunt or predator death moves the dot on the population plot. Prey numbers rise first. Predators follow, prey become scarce, and predator numbers fall until the prey can recover.</p>
-        </div>
-        <video class="project-asset" src="lotka_volterra_zerokun.mp4" poster="lotka-volterra.webp" width="720" height="1280" controls playsinline preload="none" aria-labelledby="populations" aria-describedby="populations-note">
-          <a href="lotka_volterra_zerokun.mp4">Watch the Lotka–Volterra animation (MP4)</a>
-        </video>
-      </div>
+    <section aria-labelledby="biological-techniques">
+      <h2 id="biological-techniques">Biological techniques</h2>
+      <h3>Time-lapse fluorescence microscopy</h3>
+      <p>The <a href="../index.html#crappy-softwares-imaging-analysis-and-simulators">CytotoxicVision recording</a> follows a natural killer cell and its target. The traces beside the images show the target’s Calcein Green AM signal falling as its TO-PRO-3 signal rises. Dr Cathal Hosty provided the recording.</p>
     </section>
   </main>
 </body>
