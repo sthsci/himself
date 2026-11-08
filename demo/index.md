@@ -2,7 +2,7 @@
 title: "Elephes Sung"
 subtitle: "Natural killer cells and their targets"
 author: "King of the Clingenland"
-author-url: "https://github.com/ElephesSung"
+author-url: "https://github.com/sthsci"
 lang: en
 # toc-title: "Contents"
 # description-meta: "Personal academic website of Elephes Sung / Fanxin Song at Imperial College London"
