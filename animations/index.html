@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Short science animations by Elephes Sung on predator–prey cycles, electron microscopy and flow cytometry.">
+  <meta name="description" content="Short science animations by Elephes Sung on predator–prey cycles, epidemics, electron microscopy and flow cytometry.">
   <title>Science animations · Elephes Sung</title>
   <link rel="stylesheet" href="../src/reset.css">
   <link rel="stylesheet" href="../src/index.css">
@@ -13,7 +13,7 @@
   <main class="science-animations">
     <header>
       <h1>Science animations</h1>
-      <p>These four silent animations follow a predator–prey cycle, show why gold looks bright in one electron microscope and dark in another, and trace how a flow cytometer turns passing cells into dots on a plot. Each film runs for 27 seconds.</p>
+      <p>These five silent animations follow a predator–prey cycle and an epidemic, show why gold looks bright in one electron microscope and dark in another, and trace how a flow cytometer turns passing cells into dots on a plot. Each film runs for about 27 seconds.</p>
       <nav aria-label="Animation topics">
         <a href="#lotka-volterra">Mathematical models</a> · <a href="#microscopy">Materials science techniques</a> · <a href="#biological-techniques">Biological techniques</a>
       </nav>
@@ -22,13 +22,21 @@
     <section aria-labelledby="lotka-volterra">
       <h2 id="lotka-volterra">Mathematical models</h2>
       <div class="project-gallery">
-        <div>
+        <article>
           <h3 id="populations">The Lotka–Volterra predator–prey model</h3>
+          <video class="project-asset" src="lotka_volterra_zerokun.mp4" poster="lotka-volterra.webp" width="720" height="1280" controls playsinline preload="none" aria-labelledby="populations" aria-describedby="populations-note">
+            <a href="lotka_volterra_zerokun.mp4">Watch the Lotka–Volterra animation (MP4)</a>
+          </video>
           <p id="populations-note">Each prey birth, successful hunt or predator death moves the point on the population plot. Its jagged path follows the simulated events. The smooth curve shows the prediction from the Lotka–Volterra equations. Predator numbers keep rising after prey numbers peak. As prey become scarce, predators decline and the prey population recovers.</p>
-        </div>
-        <video class="project-asset" src="lotka_volterra_zerokun.mp4" poster="lotka-volterra.webp" width="720" height="1280" controls playsinline preload="none" aria-labelledby="populations" aria-describedby="populations-note">
-          <a href="lotka_volterra_zerokun.mp4">Watch the Lotka–Volterra animation (MP4)</a>
-        </video>
+        </article>
+        <article>
+          <h3 id="sir-epidemic">The SIR epidemic model</h3>
+          <video class="project-asset" src="sir_epidemic_zerokun.mp4" poster="sir_epidemic_final_frame.png" width="720" height="1280" controls playsinline preload="none" aria-labelledby="sir-epidemic" aria-describedby="sir-epidemic-note">
+            <a href="sir_epidemic_zerokun.mp4">Watch the SIR epidemic animation (MP4)</a>
+          </video>
+          <p id="sir-epidemic-note">Each dot is one of 1,000 people. An infection moves a person from susceptible to infected; a recovery moves them from infected to recovered. The smooth curves show what the equations predict. By day 70, all 894 people who caught the infection have recovered. The other 106 never caught it.</p>
+          <p><a href="sir_epidemic_final_frame.png">View the final frame at full size (PNG)</a></p>
+        </article>
       </div>
     </section>
     <hr>
@@ -58,6 +66,7 @@
         <div>
           <h3 id="flow-cytometry">Flow cytometry: one cell, one dot</h3>
           <p id="flow-cytometry-note">White blood cells pass through a laser one at a time. Each dot records how much light one cell scatters forward and to the side. In this simulation, monocytes and granulocytes overlap in forward scatter, but side scatter helps distinguish them.</p>
+          <p><a href="flow_zerokun.py" download>Download the flow cytometry simulation (Python)</a></p>
         </div>
         <video class="project-asset" src="flow_cytometry_zerokun.mp4" poster="flow-cytometry.webp" width="720" height="1280" controls playsinline preload="none" aria-labelledby="flow-cytometry" aria-describedby="flow-cytometry-note">
           <a href="flow_cytometry_zerokun.mp4">Watch the flow cytometry animation (MP4)</a>
