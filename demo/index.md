@@ -29,7 +29,7 @@ lang: en
     <td class="width-auto about-copy">
       <p>I’m a PhD student in Life Sciences at Imperial College London. I work in <strong>mathematical biophysics and immunology</strong>, studying why some targets survive an encounter with a natural killer (NK) cell and others do not.</p>
 
-      <p>I studied Nanomaterials and Nanotechnology as an undergraduate, then completed an MRes in Systems and Synthetic Biology at Imperial.</p>
+      <p>I studied Nanomaterials and Nanotechnology as an undergraduate, then completed an MRes in Systems and Synthetic Biology.</p>
 
       <p>Email me at <a href="mailto:eu23@ic.ac.uk?subject=Hello_from_webpage">eu23@ic.ac.uk</a>.</p>
     </td>
