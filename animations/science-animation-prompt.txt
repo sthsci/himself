@@ -1,0 +1,42 @@
+Make a short explainer animation of [TOPIC] in "zerokun style".
+
+GOAL
+- One physical idea, understood in one viewing. Concise beats complete: no parameter tables, extra plots or derivations.
+- Synergy: one driver moves everything. Use one stream of simulated events (electrons, photons, molecules, MC steps) or, for a continuous topic, one swept variable (T, V, t). Every panel responds to the same event or value in the same frame.
+- Real equations and physically sensible values, but show only what the takeaway needs.
+
+FORMAT
+- Python + NumPy simulation; matplotlib FuncAnimation; MP4 (libx264, yuv420p, CRF 18, 30 fps).
+- Portrait 720×1280 (figsize 7.2×12.8 in, dpi 100), ~27 s: ~9 s single events, ~16 s build-up, 2 s hold on the final frame. No audio.
+- White background, black and greys only (grey colormap for images). Lines ~1 pt, grey fills for objects, dashed lines for references and guides.
+- All text via LaTeX (text.usetex=True, Computer Modern). If it fails, install dvipng, ghostscript and cm-super; use mathtext.fontset="cm" only as a last resort.
+- English, mostly lowercase, readable on a phone: panel titles 13.5 pt bold, labels 11.5 pt, notes 10.5 pt grey, ticks 10 pt, counter 20 pt, equation 16 pt, takeaway 13.5 pt.
+
+LAYOUT (one fixed page, at most 3 panels, stacked on one shared x-axis)
+1. Header: plain-word title of (a) top left ("(a) how a TEM makes contrast"). Top right: big counter of the driver (= number of events drawn), a grey caption saying exactly what is counted ("electrons sent through the strip"), and a grey stage note ("one at a time" → "sped up").
+2. (a) Mechanism, top third: line-drawing schematic. Each part has a leader line to the right with its name in black and what it does in grey (≤ 6 words). Small symbol legend and an honesty note ("(angles exaggerated)") in empty space. Draw the detector as a row of pixels that light up where events land.
+3. (b) Directly below the detector, same width and x-scale, joined to it by dashed lines: the detector seen from above (the 2D result). Mark the slice that (a) shows (dashed strip); the rest of (b) gets the same dose at the same moment. No 2D result? Drop (b).
+4. (c) Below (b), same width and x-scale: counts along the slice as a growing histogram (grey bars) with the expected curve (black line) and reference level (dashed, I₀) scaled by the same count. Label key features above the plot ("6 nm", "16 nm"). The y-axis only grows.
+5. (b) and (c) fill the left half. The right half holds their titles, a grey subtitle ("the camera seen from above"), what the marks mean ("dashed strip: the electrons drawn in (a)", "bright: e⁻ arrived / dark: e⁻ stopped"), scale bar, legend and ONE live readout ("16 nm gold: I/I₀ = 0.19", shown as "…" until there is enough signal).
+6. Bottom: ONE key equation with the key numbers, one grey line explaining the symbols, one plain-English takeaway ("gold scatters electrons past the aperture → gold looks dark").
+
+ANIMATION
+- Every moving object drawn is a real simulated event and is counted. No decorative samples.
+- When an event lands, its pixel in (a)'s detector, its pixel in (b) and its bar in (c) appear in the same frame, on one vertical line.
+- Stage 1: 3–5 hand-picked single events, one every ~2 s, covering every outcome (passes / scattered but still passes / stopped). Each draws a thin trail of its full path, bends at the object it actually hits, and if stopped ends in an × where it stops. Ring its pixel in (b) with a short label ("one e⁻ = one bright pixel") and draw a dashed vertical guide from the landing through the pixel to its bar. Clear these when the next event fires.
+- Stage 2: ramp the event rate (logistic) and the flight speed smoothly, with smaller dots, until the result is clean. Show the expected curve and reference line only once there is signal.
+- Continuous sweep instead of events: put a marker at the current value in every panel, pausing briefly at 2–3 key values with a short label.
+- Keep geometry consistent: if the optics invert the image, the detector row, (b) and (c) are inverted the same way.
+- Use a representative random seed: the final readout should match the expected value.
+- Nothing leaves its axes; no title slides, transitions, fades or unlabelled decoration.
+
+IMPLEMENTATION
+- Precompute per-event arrays once (launch frame, path polyline, landing frame, outcome, detector pixel). Every panel reads from these same arrays; detector images are cumulative histograms by landing frame.
+- Scale image brightness to the current mean count per pixel (×1.15, minimum 1), so single hits show white and the final image is evenly exposed.
+
+CHECKS (before delivering)
+- Stills at the first landing, each single event, the start of stage 2, the busiest frame and the final frame; fix overlaps and clipped text.
+- Step through the frames around one landing: all three panels must change on the same frame.
+- Confirm 720×1280, 30 fps, yuv420p, and that the last 2 s are identical.
+
+Deliver the MP4, a PNG of the final frame, and the standalone script.
