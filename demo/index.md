@@ -1,6 +1,6 @@
 ---
 title: "Elephes Sung"
-subtitle: "Natural killer cells and their targets"
+subtitle: "Something of a scientist"
 author: "King of the Clingenland"
 author-url: "https://github.com/sthsci"
 lang: en
@@ -22,7 +22,7 @@ lang: en
     <td class="width-min about-photo-cell">
       <figure class="bw-photo about-photo">
         <img src="demo/profile_2.JPG" alt="Portrait of Elephes Sung" />
-        <figcaption>Hello, I’m Elephes.</figcaption>
+        <figcaption><code>print('Good morning, good afternoon, good evening')</code></figcaption>
       </figure>
     </td>
 
